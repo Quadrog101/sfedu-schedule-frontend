@@ -31,6 +31,7 @@ $timelineRows: 21;
     box-sizing: border-box;
 }
 .event {
+    border-radius: 12px;
     min-height: 80px;
     background-color: #1E1F21;
     color: $whitecolor;

@@ -41,7 +41,7 @@ const Event = ({event,params}) => {
     const time = `${event.begin.substring(0, 5)} - ${event.end.substring(0, 5)}`;
     
     return (
-        <div className="event" style={style} onClick={activateEve}>
+        <div className="event" style={style} /*onClick={activateEve}*/>
             <p>{event.description}</p>
             <p>{event.classRoom}</p>
             <p>{event.teacher}</p>
