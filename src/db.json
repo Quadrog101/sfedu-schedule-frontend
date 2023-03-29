@@ -1,0 +1,91 @@
+{
+  "id": "361b75e8-d9b2-47c0-bdc5-e06961b74c73",
+  "name": "2.7",
+  "facultyId": "379d070c-7ecc-4b1a-9504-d50bfcc362ce",
+  "events": [
+    {
+      "id": "960bfb3c-19cb-4f60-a6eb-08db02931e8b",
+      "dayNumber": "Wednesday",
+      "begin": "13:00:00",
+      "end": "15:00:00",
+      "description": "Test new timespan",
+      "address": "Rostov-on-Don",
+      "classRoom": "514",
+      "teacher": "Tolmachev",
+      "onEven": null,
+      "subGroup": 1
+    },
+    {
+      "id": "264af9bf-2cc3-47a4-8093-08db0955bf8a",
+      "dayNumber": "Wednesday",
+      "begin": "14:00:00",
+      "end": "17:20:00",
+      "description": "fizra",
+      "address": "333",
+      "classRoom": "string",
+      "teacher": "string",
+      "onEven": true,
+      "subGroup": 2
+    },
+    {
+      "id": "264af9bf-2cc3-47a4-8093-08db0955bf8z",
+      "dayNumber": "Monday",
+      "begin": "09:10:00",
+      "end": "11:00:00",
+      "description": "Pokurka",
+      "address": "milchakova",
+      "classRoom": "420",
+      "teacher": "Maria Juana",
+      "onEven": true,
+      "subGroup": null
+    },
+    {
+      "id": "264af9bf-2cc3-47a4-8093-08db0955bf81",
+      "dayNumber": "Tuesday",
+      "begin": "12:00:00",
+      "end": "14:20:00",
+      "description": "Otjumania",
+      "address": "333",
+      "classRoom": "333",
+      "teacher": "Pavel",
+      "onEven": true,
+      "subGroup": 2
+    },
+    {
+      "id": "264af9bf-2cc3-47a4-8093-08db0955bf82",
+      "dayNumber": "Thursday",
+      "begin": "17:00:00",
+      "end": "18:10:00",
+      "description": "Stolovka",
+      "address": "zorge",
+      "classRoom": "666",
+      "teacher": "Zoya",
+      "onEven": true,
+      "subGroup": 1
+    },
+    {
+      "id": "264af9bf-2cc3-47a4-8093-08db0955bf83",
+      "dayNumber": "Saturday",
+      "begin": "09:00:00",
+      "end": "12:00:00",
+      "description": "fizra",
+      "address": "333",
+      "classRoom": "string",
+      "teacher": "string",
+      "onEven": true,
+      "subGroup": 2
+    },
+    {
+      "id": "264af9bf-2cc3-47a4-8093-08db0955bf84",
+      "dayNumber": "Saturday",
+      "begin": "13:00:00",
+      "end": "17:20:00",
+      "description": "fizra",
+      "address": "333",
+      "classRoom": "string",
+      "teacher": "string",
+      "onEven": true,
+      "subGroup": 1
+    }
+  ]
+}
