@@ -11,10 +11,9 @@ function isEven(){
     return !Boolean(numberOfWeeks % 2);
 }
 
-const ScheduleGrid = ({events}) => {
+const ScheduleGrid = ({events,parity}) => {
     const days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-
-    const parity = isEven(); 
+    //const currentParity = isEven(); 
     const timelineStartHour = 8;
     const timelineEndHour = 18;
     const timelineHeight = 50;
@@ -24,7 +23,8 @@ const ScheduleGrid = ({events}) => {
 
     const eventProps = {
         scale: timelineCount,
-        start: timelineStartHour
+        start: timelineStartHour,
+        parity: parity
     };
 
     return(

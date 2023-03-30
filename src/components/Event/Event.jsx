@@ -17,8 +17,8 @@ const Event = ({event,params}) => {
     const sca = `${scale}%`;
     const pos = `${position}%`;
 
-    let align = event.crossed && event.subGroup === 2 ? `50%` : `0%`;
-    let width = event.crossed ? `50%` : `100%`;
+    const align = event.crossed && event.subGroup === 2 ? `50%` : `0%`;
+    const width = event.crossed ? `50%` : `100%`;
 
 
     // const changePosition = () => {
