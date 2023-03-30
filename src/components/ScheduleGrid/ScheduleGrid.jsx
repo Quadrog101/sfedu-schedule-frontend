@@ -7,6 +7,8 @@ import './schedule.scss';
 const ScheduleGrid = ({events}) => {
     const days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
+    const parity = true;
+    
     const timelineStartHour = 8;
     const timelineEndHour = 18;
     const timelineHeight = 50;
@@ -28,8 +30,14 @@ const ScheduleGrid = ({events}) => {
                 <div className="schedule">
                 {
                     [...Array(days.length)].map((n,i) => 
-                        <DayColumn key={i} events={events.filter(event => event.dayNumber === days[i])} day={days[i]} height={columnHeight} eventProps={eventProps} />
-                    )
+                        <DayColumn 
+                            key={i} 
+                            events={events.filter(event => event.dayNumber === days[i] && event.onEven === parity)} 
+                            day={days[i]} 
+                            height={columnHeight} 
+                            eventProps={eventProps} 
+                            />
+                        )
                 }
                 </div>
             </div>
