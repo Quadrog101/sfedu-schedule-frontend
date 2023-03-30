@@ -52,15 +52,6 @@ body{
         text-transform: capitalize;
     }
     border-bottom: #7e7e7e 4px solid;
-    &::-webkit-scrollbar {
-        width: 5px; /* в основном для вертикальных полос прокрутки */
-        height: 10px; /* в основном для горизонтальных полос прокрутки */
-    }
-    &::-webkit-scrollbar-thumb { /* плашка-бегунок */
-        background: #7e7e7e;
-        border-radius: 3px;
-    }
-    overflow: auto;
     min-height: 80px;
     color: #fff;
     position: absolute;

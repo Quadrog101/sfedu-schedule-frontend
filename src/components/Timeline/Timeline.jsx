@@ -26,4 +26,4 @@ const Timeline = props => {
     )
 };
 
-export { Timeline };
+export { Timeline }; 
