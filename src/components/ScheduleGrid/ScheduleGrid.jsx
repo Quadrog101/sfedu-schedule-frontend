@@ -7,8 +7,8 @@ import './schedule.scss';
 const ScheduleGrid = ({events}) => {
     const days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
-    const timelineStartHour = 9;
-    const timelineEndHour = 19;
+    const timelineStartHour = 8;
+    const timelineEndHour = 18;
     const timelineHeight = 50;
 
     const timelineCount = (timelineEndHour - timelineStartHour)+1;
