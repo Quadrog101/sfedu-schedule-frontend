@@ -38,7 +38,7 @@ const Event = ({event,params}) => {
         backgroundColor: color
     };
 
-    const time = `${event.begin.substring(0, 5)} - ${event.end.substring(0, 5)}`;
+    const time = `${event.begin} - ${event.end}`;
     
     return (
         <div className="event" style={style} onClick={activateEve}>
