@@ -10,19 +10,19 @@ const Timeline = props => {
     };
 
     return (
-        <ul className="timeLine">
-        {
-            [...Array(itemsCount)].map((n,i) => 
-                <li className="item" style={style} key={i}>
-                    <span>
-                    {
+            <ul className="timeLine">
+                {
+                    [...Array(itemsCount)].map((n,i) => 
+                    <li className="item" style={style} key={i}>
+                        <span>
+                        {
                         ("00" + startHour++).slice(-2) + ":00"
-                    }
-                    </span>
-                </li>
+                        }
+                </span>
+            </li>
             )
-        }
-        </ul>
+            }
+            </ul>
     )
 };
 

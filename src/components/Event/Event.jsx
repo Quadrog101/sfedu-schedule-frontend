@@ -42,10 +42,10 @@ const Event = ({event,params}) => {
     
     return (
         <div className="event" style={style} /*onClick={activateEve}*/>
+            <p>{time}</p>
             <p>{event.description}</p>
             <p>{event.classRoom}</p>
             <p>{event.teacher}</p>
-            <p>{time}</p>
             <p>{event.subGroup}</p>
         </div>
     )
