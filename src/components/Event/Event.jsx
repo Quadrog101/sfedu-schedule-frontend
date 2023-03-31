@@ -12,7 +12,6 @@ function getRandomColor() {
 const Event = ({event,params}) => {
     const scale = (event.eventEnd - event.eventStart)/params.scale*100;
     const position = (event.eventStart - params.start)/params.scale*100;
-    const color = `#1E1F21`;
 
     const sca = `${scale}%`;
     const pos = `${position}%`;
@@ -35,7 +34,6 @@ const Event = ({event,params}) => {
         height: sca,
         width: width,
         left: align,
-        backgroundColor: color
     };
 
     const time = `${event.begin.substring(0, 5)} - ${event.end.substring(0, 5)}`;
@@ -43,8 +41,7 @@ const Event = ({event,params}) => {
     return (
         <div className="event" style={style} /*onClick={activateEve}*/>
             <p>{time}</p>
-            <p>{event.description}</p>
-            <p>{event.classRoom}</p>
+            <p>{event.description} <span className="classRoom">(ауд. {event.classRoom})</span></p>
             <p>{event.teacher}</p>
             <p>{event.subGroup}</p>
         </div>
