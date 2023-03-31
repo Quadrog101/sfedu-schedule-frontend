@@ -115,3 +115,29 @@ body{
     font-size: 13px;
     color: #ffffffbf;
 }
+
+@media (max-width: 767px) {
+    .scheduleTimeline{
+        display: none;
+    }
+    .dayEvents{
+        overflow-x: scroll;
+        height: auto;
+    }
+    .columnWrapper{
+        flex-basis: unset;
+        flex-grow: unset;
+        border: unset;
+        width: 100%;
+    }
+    .event{
+        height: 150px;
+        position: relative;
+        flex-shrink: 0;
+        float: left;
+        max-width: 300px;
+    }
+    .schedule{
+        display: block;
+    }
+}

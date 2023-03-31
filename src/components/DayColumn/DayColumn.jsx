@@ -32,7 +32,7 @@ const DayColumn = ({events,day,height,eventProps}) => {
             <div className="columnHeader">
                 <span>{day}</span>
             </div>
-            <div className="dayEvents" style={style}>
+            <div className="dayEvents" /*style={style}*/>
             {
                 isCrossed(dayEvents).map((event,index) => {
                     return <Event key={index} event={event} params={eventProps} />
