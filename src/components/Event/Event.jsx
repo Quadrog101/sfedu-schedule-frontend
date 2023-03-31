@@ -16,8 +16,8 @@ const Event = ({event,params}) => {
     const sca = `${scale}%`;
     const pos = `${position}%`;
 
-    let align = event.crossed && event.subGroup === 2 ? `50%` : `0%`;
-    let width = event.crossed ? `50%` : `100%`;
+    const align = event.crossed && event.subGroup === 2 ? `50%` : `0%`;
+    const width = event.crossed ? `50%` : `100%`;
 
 
     // const changePosition = () => {
@@ -36,7 +36,7 @@ const Event = ({event,params}) => {
         left: align,
     };
 
-    const time = `${event.begin.substring(0, 5)} - ${event.end.substring(0, 5)}`;
+    const time = `${event.begin} - ${event.end}`;
     
     return (
         <div className="event" style={style} /*onClick={activateEve}*/>

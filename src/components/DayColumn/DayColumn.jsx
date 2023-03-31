@@ -19,6 +19,7 @@ const DayColumn = ({events,day,height,eventProps}) => {
         const endTime = event.end.split(":").map(Number);
         event.eventStart = startTime[0] + startTime[1] / 60;
         event.eventEnd = endTime[0] + endTime[1] / 60;
+        event.crossed = 0;
         return event;
     });
 
