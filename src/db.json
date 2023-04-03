@@ -110,6 +110,18 @@
       "teacher": "string",
       "onEven": true,
       "subGroup": 1
+    },
+    {
+      "id": "264af9bf-2cc3-47a4-8093-08db0955bf10",
+      "dayNumber": "Saturday",
+      "begin": "14:00",
+      "end": "16:00",
+      "description": "new",
+      "address": "333",
+      "classRoom": "string",
+      "teacher": "string",
+      "onEven": true,
+      "subGroup": 2
     }
   ]
 }
