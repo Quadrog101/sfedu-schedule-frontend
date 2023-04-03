@@ -58,6 +58,9 @@ body{
     p:nth-child(3){
         font-size: 12px;
     }
+    p:last-child{
+        font-size: 10px;
+    }
     background-color: #ffa600;
     border: #df8702 4px solid;
     border-left: none;
