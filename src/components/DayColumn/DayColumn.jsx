@@ -43,7 +43,12 @@ const DayColumn = ({events,day,height,visibility,displayState,eventProps}) => {
     const style = { 
         height: `${height}px`
     };
-    const mobStyle = {};
+
+    const mobHeight = dayEvents.length !== 0 ? `180px` : `20px`;
+
+    const mobStyle = {
+        height: mobHeight
+    };
     
     // console.log(`${day}`,isCrossed(dayEvents));
     return (

@@ -22,7 +22,7 @@ function App() {
       <Header />
       <Monitor updateData={updateData} />
       <SwitchParity updateParity={updateParity} />
-      <ScheduleGrid events = {eve.events} parity = {parity} />
+      <ScheduleGrid events = {events} parity = {parity} />
     </div>
   );
 }
