@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 function getRandomColor() {
     var letters = '0123456789ABCDEF';
@@ -19,7 +19,11 @@ const Event = ({event,params}) => {
     const align = event.crossed && event.subGroup === 2 ? `50%` : `0%`;
     const width = event.crossed ? `50%` : `100%`;
 
-
+    let visibility = params.visibility;
+    if(event.crossed && event.subGroup === 2) {
+        visibility = `${params.visibility-1}`;
+    }
+    
     // const changePosition = () => {
     //     document.getElementsByClassName('event').style.top = position;
     // };
@@ -29,17 +33,19 @@ const Event = ({event,params}) => {
         e.target.closest("div").style.backgroundColor = getRandomColor();
     }
 
-    const style = { 
+    const mobStyle = {};
+    const style = {
         top: pos,
         height: sca,
         width: width,
         left: align,
+        zIndex : visibility
     };
 
     const time = `${event.begin} - ${event.end}`;
-    
+
     return (
-        <div className="event" style={style} /*onClick={activateEve}*/>
+        <div className="event" style={params.displayState ? style : mobStyle} /*onClick={activateEve}*/>
             <p>{time}</p>
             <p>{event.description} <span className="classRoom">(ауд. {event.classRoom})</span></p>
             <p>{event.teacher}</p>

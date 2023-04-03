@@ -59,7 +59,7 @@ body{
     color: #fff;
     position: absolute;
     z-index: 3;
-    width: 100%;
+    width: 300px;
     p {
         margin: 0;
     }
@@ -114,4 +114,47 @@ body{
 .classRoom{
     font-size: 13px;
     color: #ffffffbf;
+}
+
+@media (max-width: 767px) {
+    .scheduleTimeline{
+        display: none;
+    }
+    .dayEvents{
+        overflow-x: scroll;
+        height: 180px;
+        .parityWrapper{
+            width: 300px;
+            margin-right: 40px;
+            .event{
+                height: 50%;
+                margin-right: 0;
+            }
+        }
+    }
+    .columnWrapper{
+        flex-basis: unset;
+        flex-grow: unset;
+        border: unset;
+        width: 100%;
+    }
+    .event{
+        position: relative;
+        flex-shrink: 0;
+        float: left;
+        min-height: unset;
+        margin-right: 40px;
+    }
+    .cd_schedule{
+        margin: 0;
+        .schedule{
+            display: block;
+        }
+    }
+    .monitor{
+        width: 100vw;
+        .select-block{
+            max-width: 100%;
+        }
+    }
 }
