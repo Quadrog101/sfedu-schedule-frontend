@@ -36,10 +36,9 @@ $timelineRows: 21;
 }
 body{
     font-family: 'Roboto', sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
 }
 .event {
-    overflow: hidden;
     border-radius: 5px;
     p{
         padding: 0px 0px 0px 10px;
@@ -164,13 +163,11 @@ select{
     }
     .dayEvents{
         overflow-x: scroll;
-        height: 180px;
         .parityWrapper{
             width: 300px;
-            margin-right: 40px;
+            height: 100%;
             .event{
                 height: 50%;
-                margin-right: 0;
             }
         }
     }
@@ -185,7 +182,7 @@ select{
         flex-shrink: 0;
         float: left;
         min-height: unset;
-        margin-right: 40px;
+        height: 215px;
     }
     .cd_schedule{
         margin: 0;
@@ -197,6 +194,12 @@ select{
         width: 100vw;
         .select-block{
             max-width: 100%;
+        }
+    }
+    .item{
+        margin-right: 40px;
+        &:nth-last-child(1){
+            margin-right: 0;
         }
     }
 }

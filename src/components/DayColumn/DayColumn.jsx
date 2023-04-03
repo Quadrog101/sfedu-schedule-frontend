@@ -44,7 +44,7 @@ const DayColumn = ({events,day,height,visibility,displayState,eventProps}) => {
         height: `${height}px`
     };
 
-    const mobHeight = dayEvents.length !== 0 ? `180px` : `20px`;
+    const mobHeight = dayEvents.length !== 0 ? `215px` : `20px`;
 
     const mobStyle = {
         height: mobHeight
@@ -61,16 +61,18 @@ const DayColumn = ({events,day,height,visibility,displayState,eventProps}) => {
                 isCrossed(dayEvents).map((event,index) => {
                     if(typeof event['b'] !== "undefined") {
                         return (
-                            <div className="parityWrapper" key={index}>
-                            {
-                                  Object.keys(event).map((el,i) => (
-                                    <Event key={event[el].id} event={event[el]} params={eventProps} />
-                                  ))
-                            }
+                            <div className="item">
+                                <div className="parityWrapper" key={index}>
+                                {
+                                    Object.keys(event).map((el,i) => (
+                                        <Event key={event[el].id} event={event[el]} params={eventProps} />
+                                    ))
+                                }
+                                </div>
                             </div>
                         )
                     } else {
-                        return <Event key={event.a.id} event={event.a} params={eventProps} />
+                        return <div className="item"><Event key={event.a.id} event={event.a} params={eventProps} /></div>
                     }
                 })
             }
