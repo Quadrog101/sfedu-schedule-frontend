@@ -182,7 +182,8 @@ select{
         flex-shrink: 0;
         float: left;
         min-height: unset;
-        height: 215px;
+        height: 180px;
+        box-sizing: border-box;
     }
     .cd_schedule{
         margin: 0;
@@ -191,7 +192,7 @@ select{
         }
     }
     .monitor{
-        width: 100vw;
+        width: 100%;
         .select-block{
             max-width: 100%;
         }

@@ -44,7 +44,7 @@ const DayColumn = ({events,day,height,visibility,displayState,eventProps}) => {
         height: `${height}px`
     };
 
-    const mobHeight = dayEvents.length !== 0 ? `215px` : `20px`;
+    const mobHeight = dayEvents.length !== 0 ? `180px` : `20px`;
 
     const mobStyle = {
         height: mobHeight
