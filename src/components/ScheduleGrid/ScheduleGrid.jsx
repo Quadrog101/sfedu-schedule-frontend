@@ -18,7 +18,7 @@ const ScheduleGrid = ({events,parity}) => {
 
     const timelineStartHour = 8;
     const timelineEndHour = 18;
-    const timelineHeight = 50;
+    const timelineHeight = 110;
 
     const timelineCount = (timelineEndHour - timelineStartHour)+1;
     const columnHeight = timelineHeight*timelineCount;
