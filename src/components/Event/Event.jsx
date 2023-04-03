@@ -47,7 +47,7 @@ const Event = ({event,params}) => {
     return (
         <div className="event" style={params.displayState ? style : mobStyle} /*onClick={activateEve}*/>
             <p>{time}</p>
-            <p>{event.description} <span className="classRoom">(ауд. {event.classRoom})</span></p>
+            <p>{event.description} <span className="classRoom">{event.classRoom}</span></p>
             <p>{event.teacher}</p>
             <p>{event.subGroup}</p>
         </div>

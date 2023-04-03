@@ -8,7 +8,7 @@ const SwitchParity = ({updateParity}) => {
     return (
         <div className="switch">
             <input type="checkbox" checked={checked} onChange={() => setChecked(!checked)}/>
-             {checked ? 'Чётная' : 'Нечётная'}
+             {checked ? 'Нижняя неделя' : 'Верхняя неделя'}
         </div>
     );
 };

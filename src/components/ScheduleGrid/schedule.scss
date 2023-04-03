@@ -2,6 +2,10 @@ $whitecolor: #e900e9;
 $lineheight: 50px;
 $timelineRows: 21;
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+#root{
+    background: url('./../img/7462E4D81BF86C952479C87FDEC96197.png') top right no-repeat;
+    background-size: 16vw 16vw;
+}
 .schedule {
     display: flex;
     flex-wrap: nowrap;
@@ -35,22 +39,26 @@ body{
     font-weight: 400;
 }
 .event {
-    box-sizing: border-box;
     border-radius: 5px;
     p{
-        padding: 0px 0px 4px 10px;
+        padding: 0px 0px 0px 10px;
     }
     p:first-child{
-        font-size: 14px;
+        font-size: 12px;
         padding-top: 10px;
         color: #ffffffe8;
     }
     p:nth-child(2){
-        padding-top: 5px;
+        padding-top: 0px;
         color: #ffffff;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 600;
-        text-transform: capitalize;
+    }
+    p:nth-child(3){
+        font-size: 12px;
+    }
+    p:last-child{
+        font-size: 10px;
     }
     background-color: #ffa600;
     border: #df8702 4px solid;
@@ -116,10 +124,42 @@ body{
     font-size: 13px;
     color: #ffffffbf;
 }
+select{
+    font-size: 16px;
+    width: 17vw;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400px;
+}
+.switch{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.head__row{
+    display:flex;
+    justify-content: space-between;
+}
+.head__title{
+    padding-left: 10px;
+    padding-top: 15px;
+    font-size: 5vw;
+    font-family: 'Roboto', sans-serif;
+    color: #2c2b2be6;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
 
 @media (max-width: 767px) {
     .scheduleTimeline{
         display: none;
+    }
+    .head__title{
+        font-size: 5vw;
     }
     .dayEvents{
         overflow-x: scroll;
