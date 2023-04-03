@@ -137,7 +137,16 @@ body{
         float: left;
         max-width: 300px;
     }
-    .schedule{
-        display: block;
+    .cd_schedule{
+        margin: 0;
+        .schedule{
+            display: block;
+        }
+    }
+    .monitor{
+        width: 100vw;
+        .select-block{
+            max-width: 100%;
+        }
     }
 }

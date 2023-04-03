@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useLayoutEffect } from "react";
 import {Timeline} from "../Timeline/Timeline";
 import {DayColumn} from "../DayColumn/DayColumn";
 import './schedule.scss';
@@ -14,6 +14,8 @@ function isEven(){
 const ScheduleGrid = ({events,parity}) => {
     const days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     //const currentParity = isEven(); 
+    const [matches, setMatches] = useState(window.matchMedia('(min-width: 767px)').matches);
+
     const timelineStartHour = 8;
     const timelineEndHour = 18;
     const timelineHeight = 50;
@@ -24,9 +26,15 @@ const ScheduleGrid = ({events,parity}) => {
     const eventProps = {
         scale: timelineCount,
         start: timelineStartHour,
-        parity: parity
+        parity: parity,
     };
 
+    useEffect(() => {
+        window
+        .matchMedia("(min-width: 768px)")
+        .addEventListener('change', e => setMatches( e.matches ));
+    }, []);
+    
     return(
         <div className="scheduleWrapper">
             <div className="scheduleTimeline">
@@ -37,10 +45,12 @@ const ScheduleGrid = ({events,parity}) => {
                 {
                     [...Array(days.length)].map((n,i) => 
                         <DayColumn 
-                            key={i} 
+                            key={i}
                             events={events.filter(event => event.dayNumber === days[i] && (event.onEven === parity || event.onEven === null))} 
                             day={days[i]} 
-                            height={columnHeight} 
+                            height={columnHeight}
+                            visibility={(20-i*2)}
+                            displayState={matches}
                             eventProps={eventProps} 
                             />
                         )
