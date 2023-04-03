@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 
-const CustomSelect = ({options, onChange }) => {
+const CustomSelect = ({options, onChange}) => {
     return (
         <select className="select-block" onChange={onChange}>
+            <option disabled={false} value="">
+                --Choose and option--
+            </option>
             { options.map((option, index) =>
                 <option key={index} value={index}>{option.name}</option>
             )}
