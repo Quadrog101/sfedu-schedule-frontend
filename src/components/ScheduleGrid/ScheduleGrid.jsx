@@ -12,7 +12,7 @@ function isEven(){
 }
 
 const ScheduleGrid = ({events,parity}) => {
-    const days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    const days = ["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота"];
     //const currentParity = isEven(); 
     const [matches, setMatches] = useState(window.matchMedia('(min-width: 767px)').matches);
 
@@ -46,12 +46,12 @@ const ScheduleGrid = ({events,parity}) => {
                     [...Array(days.length)].map((n,i) => 
                         <DayColumn 
                             key={i}
-                            events={events.filter(event => event.dayNumber === days[i] && (event.onEven === parity || event.onEven === null))} 
-                            day={days[i]} 
+                            events={events.filter(event => event.dayNumber === i && (event.onEven === parity || event.onEven === null))} 
+                            day={days[i]}
                             height={columnHeight}
                             visibility={(20-i*2)}
                             displayState={matches}
-                            eventProps={eventProps} 
+                            eventProps={eventProps}
                             />
                         )
                 }
