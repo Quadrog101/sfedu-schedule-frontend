@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/sfedu-schedule-frontend/static/css/main.eab266f4.css",
-    "main.js": "/sfedu-schedule-frontend/static/js/main.54e9e7bf.js",
+    "main.css": "/sfedu-schedule-frontend/static/css/main.fa46128d.css",
+    "main.js": "/sfedu-schedule-frontend/static/js/main.48c17179.js",
     "index.html": "/sfedu-schedule-frontend/index.html",
-    "main.eab266f4.css.map": "/sfedu-schedule-frontend/static/css/main.eab266f4.css.map",
-    "main.54e9e7bf.js.map": "/sfedu-schedule-frontend/static/js/main.54e9e7bf.js.map"
+    "main.fa46128d.css.map": "/sfedu-schedule-frontend/static/css/main.fa46128d.css.map",
+    "main.48c17179.js.map": "/sfedu-schedule-frontend/static/js/main.48c17179.js.map"
   },
   "entrypoints": [
-    "static/css/main.eab266f4.css",
-    "static/js/main.54e9e7bf.js"
+    "static/css/main.fa46128d.css",
+    "static/js/main.48c17179.js"
   ]
 }
